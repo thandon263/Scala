@@ -18,6 +18,17 @@ object ScalaTutorial {
             }
             sum
         }
+
+        // recursion
+        def factorial(num : BigInt) : BigInt = {
+            if( num <= 1)
+                1
+            else 
+                num * factorial(num - 1)
+        }
+
+        // print results
+        println("Factorial of 4 = " + factorial(4))
         println("List of args: " + getSum2(1,3,4,5,7,8))
         println("5 + 4 = " + getSum(5,4))
     }
